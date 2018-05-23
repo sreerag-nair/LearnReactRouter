@@ -12,19 +12,19 @@ const t = () => {
 
 const t1 = () => {
     return (
-        <h1>TARGET COMPONENT1</h1>
+        <h1>TARGET COMPONENT 1</h1>
     )
 }
 
 const t2 = () => {
     return (
-        <h1>TARGET COMPONENT2</h1>
+        <h1>TARGET COMPONENT 2</h1>
     )
 }
 
 const t3 = () => {
     return (
-        <h1>TARGET COMPONENT3</h1>
+        <h1>TARGET COMPONENT 3</h1>
     )
 }
 
