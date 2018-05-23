@@ -52,7 +52,7 @@ class LearnRedirect extends Component {
     };
 
     callMe() {
-        this.setState({ x: "hehe" })
+        this.setState({ x: 'hehe' })
     }
 
     callMe1() {
@@ -108,8 +108,10 @@ class LearnRedirect extends Component {
        )
        break;
 
-       default : 
-       return null
+       case 'hehe' : 
+       return (
+        <Redirect to='/target' />
+       )
        break;
        }
        
@@ -122,9 +124,12 @@ class LearnRedirect extends Component {
     render() {
 
         return (
+            
             <Router>
                 <div>
                 {this.renderRedirect()}
+                <div>
+                
                     <Switch>
                         
                         <Route exact path='/target' component={t} />
@@ -143,6 +148,8 @@ class LearnRedirect extends Component {
                     <Button onClick={this.callMe3.bind(this)} > Click me 3! </Button>
                     <Button onClick={this.callMe4.bind(this)} > Click me 4! </Button>
                     <Button onClick={this.callMe5.bind(this)} > Click me 5! </Button>
+                    
+                </div>
                 </div>
             </Router>
         )
