@@ -41,7 +41,7 @@ class LearnRedirect extends Component {
                     <Switch>
                         
                         <Route exact path='/target' component={t} />
-                        <Route exact path='/' component={b} />
+                        {/* <Route exact path='/' component={b} /> */}
                         
                     </Switch>
                     {/* <Link to = '/target'>{b}</Link> */}
